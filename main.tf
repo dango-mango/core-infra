@@ -5,6 +5,7 @@ provider "aws" {
 
 module "artifactory" {
   source = "./modules/data-stores/artifactory"
+  region = "${var.region}"
 }
 
 module "sql" {
