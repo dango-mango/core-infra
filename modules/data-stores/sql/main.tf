@@ -1,4 +1,4 @@
-resource "aws_rds_cluster" "skincare" {
+resource "aws_rds_cluster" "sql" {
   cluster_identifier = "skincare"
   engine = "aurora-mysql"
   engine_version  = "5.7.mysql_aurora.2.07.1"
