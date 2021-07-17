@@ -9,6 +9,6 @@ module "artifactory" {
 
 module "sql" {
   source = "./modules/data-stores/sql"
-  master_username = "${var.master_username}"
-  master_password = "${var.master_password}"
+  master_username = "${var.sql_master_username}"
+  master_password = "${var.sql_master_password}"
 }

@@ -3,13 +3,13 @@ variable "region" {
   type = string
 }
 
-variable "master_username" {
+variable "sql_master_username" {
   description = "Master username"
   type = string
   sensitive = true
 }
 
-variable "master_password" {
+variable "sql_master_password" {
   description = "Master password"
   type = string
   sensitive = true
