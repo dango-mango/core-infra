@@ -7,6 +7,7 @@ resource "aws_rds_cluster" "skincare" {
   master_password = "${var.master_password}"
   engine_mode = "serverless"
   backup_retention_period = 0
+  skip_final_snapshot = true
   scaling_configuration {
     auto_pause               = true
     max_capacity             = 1
