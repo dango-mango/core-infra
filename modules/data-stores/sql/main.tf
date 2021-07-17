@@ -1,8 +1,3 @@
-provider "aws" {
-  region = "${var.region}"
-  max_retries = 1
-}
-
 resource "aws_rds_cluster" "skincare" {
   cluster_identifier = "aurora-cluster-demo"
   engine = "aurora-mysql"
