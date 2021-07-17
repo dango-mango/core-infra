@@ -1,5 +1,5 @@
 resource "aws_rds_cluster" "skincare" {
-  cluster_identifier = "aurora-cluster-demo"
+  cluster_identifier = "skincare"
   engine = "aurora-mysql"
   engine_version  = "5.7.mysql_aurora.2.10.0"
   database_name = "skincare"
