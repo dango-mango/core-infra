@@ -1,7 +1,7 @@
 resource "aws_rds_cluster" "skincare" {
   cluster_identifier = "aurora-cluster-demo"
   engine = "aurora-mysql"
-  engine_version  = "5.7.mysql_aurora.2.10.0"
+  engine_version  = "5.7.serverless_mysql_aurora.2.07.1"
   database_name = "skincare"
   master_username = "${var.master_username}"
   master_password = "${var.master_password}"
